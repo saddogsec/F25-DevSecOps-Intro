@@ -205,7 +205,7 @@ technical_assets:
       To Reverse Proxy (preferred):
         target: reverse-proxy
         description: "User to reverse proxy (HTTPS 443)."
-        protocol: http
+        protocol: https
         authentication: session-id
         authorization: enduser-identity-propagation
         tags: ["primary"]
