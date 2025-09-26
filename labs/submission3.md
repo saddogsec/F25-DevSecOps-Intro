@@ -54,6 +54,24 @@ To github.com:saddogsec/F25-DevSecOps-Intro.git
 ### Why commits must be verified
 The main reasons, why signing commits is important is authencity and accountability. The signed commit cannot be tampered with. And assuming the owner of key didn't leaked it(In such case different mechanisms used), there's no good way for malicious actor to do something. Also signing ensures that every commit can be traced down to each person, reducing the risk of insider threat. DevSecOps frameworks usually forbids unsigned commits entirely.
 
+## Pre-commit Secret Scanning
+### Verify hook functionality (failed run)
+First add some fake token and try to commit it:
+```
+F25-DevSecOps-Intro on  feature/lab3 [?] took 9s 
+❯ echo "Some definitely not fake token: xoxp-1234567890-abcdefghijklmno-0987654321-pqrstuvwxyzabcdef
+  " >> labs/submission3.md 
+
+F25-DevSecOps-Intro on  feature/lab3 [!?] 
+❯ git add labs/submission3.md 
+
+TEMPORARY PLACEHOLDER
+
+```
+### Verify hook functionality (successful run)
+```
+TEMPORARY PLACEHOLDER
+```
 
 
-
+##
